@@ -9,7 +9,7 @@ struct LoginRequest: Content {
 public func routes(_ router: Router) throws {
     // Basic "Hello, world!" example
     router.get("hello") { req in
-        return "Hello, world!"
+        return ["message": "Hello, world!"]
     }
 
     // Example of configuring a controller
